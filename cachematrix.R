@@ -21,8 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <-NULL
   calcInverse <-function(){ matInverse <<- solve(x)}
   retrieveCache <-function () {matInverse}
-  list(retrieveCache=retrieveCache, calcInverse=calcInverse)
-
+  list(matrix=x,retrieveCache=retrieveCache, calcInverse=calcInverse)
+  
 }
 
 
